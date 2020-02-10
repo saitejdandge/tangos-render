@@ -23,7 +23,7 @@ export class EmailTemplateClient {
   }
   private readFile(filePath: string): Promise<string> {
     return new Promise((resolve, reject) => {
-      fs.readFile(filePath, { encoding: 'utf-8' }, (err, data) => {
+      fs.readFile(filePath, { encoding: 'utf-8' }, (err: any, data: any) => {
         if (!err) {
           resolve(data);
         } else {
@@ -67,7 +67,7 @@ export class EmailTemplateClient {
       }
     });
   }
-  private escapeRegExp(str:string) {
+  private escapeRegExp(str: string) {
     return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, '\\$1');
   }
   private replaceAll(str: string, find: string, replace: string): string {

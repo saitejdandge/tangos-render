@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - lts/*
 script:
-  - "npm run build"
+  - "npm run empty"
 deploy:
   provider: npm
   email: appeningofficial@gmail.com
