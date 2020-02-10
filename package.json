@@ -1,0 +1,29 @@
+{
+  "name": "tangos-invoice",
+  "version": "1.0.0",
+  "description": "Tangos Invoice Util ",
+  "main": "index.js",
+  "lib": [
+    "es6"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts{,x}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appening/tangos-invoice.git"
+  },
+  "author": "appening",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appening/tangos-invoice/issues"
+  },
+  "homepage": "https://github.com/appening/tangos-invoice#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  }
+}
